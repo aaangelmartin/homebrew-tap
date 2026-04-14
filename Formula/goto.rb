@@ -5,13 +5,13 @@
 class Goto < Formula
   desc "Open URLs and manage link aliases from the terminal"
   homepage "https://github.com/aaangelmartin/GoTo"
-  version "0.1.0"
-  license "MIT"
+  version "0.2.0"
+  license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aaangelmartin/GoTo/releases/download/v0.1.0/goto_0.1.0_darwin_amd64.tar.gz"
-      sha256 "5b693679c26cb33a08f35a9f33abdf403da9a07d3c260378b3b84601cd64a00d"
+      url "https://github.com/aaangelmartin/GoTo/releases/download/v0.2.0/goto_0.2.0_darwin_amd64.tar.gz"
+      sha256 "87df3bcfcadbd4964dd5744465bd4f4455478075fc641a28973008e7e89a1335"
 
       define_method(:install) do
         bin.install "goto"
@@ -19,8 +19,8 @@ class Goto < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aaangelmartin/GoTo/releases/download/v0.1.0/goto_0.1.0_darwin_arm64.tar.gz"
-      sha256 "c4ecaf2e16e03c4e6cd41d290655921baa6497702b2e4fcb51c5cf1e554472ab"
+      url "https://github.com/aaangelmartin/GoTo/releases/download/v0.2.0/goto_0.2.0_darwin_arm64.tar.gz"
+      sha256 "0a88fb23e380e92b1b4a5f8b3b97d52339e2e4b1de457731d388e5a28934799b"
 
       define_method(:install) do
         bin.install "goto"
@@ -31,16 +31,16 @@ class Goto < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aaangelmartin/GoTo/releases/download/v0.1.0/goto_0.1.0_linux_amd64.tar.gz"
-      sha256 "e145ec4698ebac1a6cf6cc0cae93a189f1303103fbafb2d29f0c000ff9d166f9"
+      url "https://github.com/aaangelmartin/GoTo/releases/download/v0.2.0/goto_0.2.0_linux_amd64.tar.gz"
+      sha256 "20b7019552c584c4f684817afac4e8214827809aed240d87da82930334873e95"
       define_method(:install) do
         bin.install "goto"
         generate_completions_from_executable(bin/"goto", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aaangelmartin/GoTo/releases/download/v0.1.0/goto_0.1.0_linux_arm64.tar.gz"
-      sha256 "fb73e71e738b3f15561320032453109a09bc886205938fbd1768638fddcb1c95"
+      url "https://github.com/aaangelmartin/GoTo/releases/download/v0.2.0/goto_0.2.0_linux_arm64.tar.gz"
+      sha256 "4bc293a73c91bbaa62414833e0d08bb1163636503f032e853b3984d35a846d5e"
       define_method(:install) do
         bin.install "goto"
         generate_completions_from_executable(bin/"goto", "completion")
