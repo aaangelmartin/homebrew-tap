@@ -5,13 +5,13 @@
 class Aka < Formula
   desc "Manage shell aliases from the terminal with a TUI"
   homepage "https://github.com/aaangelmartin/aka"
-  version "1.0.0"
+  version "1.1.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aaangelmartin/aka/releases/download/v1.0.0/aka_1.0.0_darwin_amd64.tar.gz"
-      sha256 "b15bae8e9cbdc1e63e9b91180740f8901cf7526aa5b6c6d7e442d58bb581f19d"
+      url "https://github.com/aaangelmartin/aka/releases/download/v1.1.0/aka_1.1.0_darwin_amd64.tar.gz"
+      sha256 "e434c82c416fe1ffdd8a4d75091597787af9a13613a70eb1b176cab22c8387f2"
 
       define_method(:install) do
         bin.install "aka"
@@ -19,8 +19,8 @@ class Aka < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aaangelmartin/aka/releases/download/v1.0.0/aka_1.0.0_darwin_arm64.tar.gz"
-      sha256 "8f0275da9acdbd1e44a9fd0644fffe9af3c6b6d3ee14e6e2c72d77371a64147e"
+      url "https://github.com/aaangelmartin/aka/releases/download/v1.1.0/aka_1.1.0_darwin_arm64.tar.gz"
+      sha256 "7c9cf0a4afa33cf29b9b3da45dc0e33ed997a9ead34b6d5707af7c36c1427419"
 
       define_method(:install) do
         bin.install "aka"
@@ -31,16 +31,16 @@ class Aka < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aaangelmartin/aka/releases/download/v1.0.0/aka_1.0.0_linux_amd64.tar.gz"
-      sha256 "5e868ca6bcf1ec31626568104befdb082f2c880c372726dee4e0101aafd75ea2"
+      url "https://github.com/aaangelmartin/aka/releases/download/v1.1.0/aka_1.1.0_linux_amd64.tar.gz"
+      sha256 "39709ebff777c392c7df6032762e59e2237077fea46d7153c7fce85e3179aa93"
       define_method(:install) do
         bin.install "aka"
         generate_completions_from_executable(bin/"aka", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aaangelmartin/aka/releases/download/v1.0.0/aka_1.0.0_linux_arm64.tar.gz"
-      sha256 "8e0c6a9eea1ce6d3003d985aebba0be4ec2e45e25f174e8eacd0cf50374b83d3"
+      url "https://github.com/aaangelmartin/aka/releases/download/v1.1.0/aka_1.1.0_linux_arm64.tar.gz"
+      sha256 "19daebed75ba8d235480d696503a49cdecbe275c0bd6e3acdbeb40f13031e355"
       define_method(:install) do
         bin.install "aka"
         generate_completions_from_executable(bin/"aka", "completion")
