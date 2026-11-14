@@ -14,7 +14,7 @@ cask "claude-launcher" do
   desc "Unofficial launcher to start, resume and switch Claude Code sessions"
   homepage "https://github.com/aaangelmartin/claude-launcher"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Claude Launcher.app"
 
