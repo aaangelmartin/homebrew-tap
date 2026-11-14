@@ -24,4 +24,5 @@ brew install --cask <cask>
 
 ## Casks
 
+- [`claude-launcher`](https://github.com/aaangelmartin/claude-launcher) — one shortcut to see your running Claude Code sessions, and to start or resume one in any folder (macOS). Unofficial, not affiliated with Anthropic.
 - [`podstats`](https://github.com/aaangelmartin/PodStats) — Stats, replays and playlist editor for the classic iPod (macOS).
